@@ -2,10 +2,10 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
-const authRoute = require("../Blog-API/routes/auth");
-const userRoute = require("../Blog-API/routes/users");
-const postRoute = require("../Blog-API/routes/posts");
-const categoryRoute = require("../Blog-API/routes/categoryes");
+const authRoute = require("../Blog-API/routes/auth.js");
+const userRoute = require("../Blog-API/routes/users.js");
+const postRoute = require("../Blog-API/routes/posts.js");
+const categoryRoute = require("../Blog-API/routes/categoryes.js");
 const multer = require("multer");
 const cors = require("cors");
 const path = require("path");
@@ -42,11 +42,10 @@ app.use("/api/users", userRoute);
 app.use("/api/posts", postRoute);
 app.use("/api/categories", categoryRoute);
 
-const port = process.env.PORT || 5000;
-
 // if (process.env.NODE_ENV === "production") {
 //   app.use(express.static("blog-app/build"));
 // }
+const port = process.env.PORT || 5000;
 
 app.get("/", (req, res) => {
   res.send("Server is working as usual");
