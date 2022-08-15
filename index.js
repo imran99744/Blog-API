@@ -45,9 +45,6 @@ app.use("/api/categories", categoryRoute);
 
 const port = process.env.PORT || 5000;
 
-app.get("/", (req, res) => {
-  res.send("Server is working as usual");
-});
 
 app.listen(port, () => {
   console.log(`Server is up and running on ${port}`);
