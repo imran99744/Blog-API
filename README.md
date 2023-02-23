@@ -31,11 +31,11 @@ The following endpoints are available in the API:
 - `POST /api/auth/login` - Log in an existing user and return a JWT token
 
 ## Blog Post Endpoints
-`GET / - Get all blog posts`
-`POST /api/posts` - Create a new blog post
-`GET /api/posts/:id` - Get a specific blog post by ID
-`PUT /api/posts/:id` - Update a specific blog post by ID
-`DELETE /api/posts/:id` - Delete a specific blog post by ID
+- `GET / - Get all blog posts`
+- `POST /api/posts` - Create a new blog post
+- `GET /api/posts/:id` - Get a specific blog post by ID
+- `PUT /api/posts/:id` - Update a specific blog post by ID
+- `DELETE /api/posts/:id` - Delete a specific blog post by ID
 
 ## Technologies Used
 - NodeJS
